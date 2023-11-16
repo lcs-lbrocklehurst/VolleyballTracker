@@ -8,17 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    //MARK: Stored properties
+    
+    @State private var Title: String = ""
+    @State var sets: Double = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView() {
+            
+            VStack {
+                
+                TextField("Add a new game", text: $Title)
+                    .font(.title)
+                    .padding(.horizontal)
+                Spacer()
+                
+            
+                    
+                    .padding()
+                    
+                    
+                    }
+            HStack {
+                
+            }
+            
+            }
+            
         }
-        .padding()
+        
+        
     }
-}
 
+    
 #Preview {
-    ContentView()
-}
+        ContentView()
+    }
+
