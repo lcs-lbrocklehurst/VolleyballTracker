@@ -27,11 +27,24 @@ struct ContentView: View {
                     
                     .padding()
                     
+                HStack {
                     
-                    }
-            HStack {
+                    Text("Home")
+                        .font(.system(size: 28))
+                    
+                    Spacer()
+                }
+                .padding(.horizontal)
                 
-            }
+                Stepper("\(sets.formatted(.number.precision(.fractionLength(0))))",
+                        value: $sets,
+                        in: 1...3)
+                .font(.system(size: 28))
+                .padding()
+                
+                
+                    }
+            
             
             }
             
