@@ -14,7 +14,9 @@ struct ContentView: View {
     @State private var Title: String = ""
     @State var setsHome: Double = 0
     @State var setsAway: Double = 0
-    
+    @State var currentOutcome: Outcome = .undetermined
+    @State var history:[Result] = []
+    @State var currentResult = Result(title: "", setsHome: 0, setsAway: 0)
     var body: some View {
         
         
@@ -62,8 +64,22 @@ struct ContentView: View {
                             in: 1...3)
                     .font(.system(size: 28))
                     .padding()
+                    
+                    Button(action: {
+                                addResult()
+                        //reset the interface
+                            // Reset the interface
+                                                 
+                           
+                            
+                        }, label: {
+                            Text("Save Game")
+                                .font(.system(size: 28))
+                            
+                        })
                 }
-                
+            
+           
                 
             }
             
@@ -71,9 +87,11 @@ struct ContentView: View {
             
         }
         
+    func addResult() {
         
-        
-        
+        let gameToSave = Result(title: "", setsHome: 0, setsAway: 0)
+    }
+    
     }
 
     

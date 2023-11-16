@@ -11,6 +11,8 @@
 		4717A53F2AF2B13800FB61E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A53E2AF2B13800FB61E0 /* ContentView.swift */; };
 		4717A5412AF2B13A00FB61E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4717A5402AF2B13A00FB61E0 /* Assets.xcassets */; };
 		4717A5442AF2B13A00FB61E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4717A5432AF2B13A00FB61E0 /* Preview Assets.xcassets */; };
+		475EDC382B05BA5E00F5A091 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475EDC372B05BA5E00F5A091 /* Outcome.swift */; };
+		475EDC3A2B0650B100F5A091 /* SaveGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475EDC392B0650B100F5A091 /* SaveGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		4717A5402AF2B13A00FB61E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4717A5432AF2B13A00FB61E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4717A5452AF2B13A00FB61E0 /* VolleyballTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VolleyballTracker.entitlements; sourceTree = "<group>"; };
+		475EDC372B05BA5E00F5A091 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		475EDC392B0650B100F5A091 /* SaveGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 		4717A5302AF2B13800FB61E0 = {
 			isa = PBXGroup;
 			children = (
+				475EDC362B05BA4B00F5A091 /* Model */,
 				4717A53B2AF2B13800FB61E0 /* VolleyballTracker */,
 				4717A53A2AF2B13800FB61E0 /* Products */,
 			);
@@ -67,6 +72,15 @@
 				4717A5432AF2B13A00FB61E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		475EDC362B05BA4B00F5A091 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				475EDC372B05BA5E00F5A091 /* Outcome.swift */,
+				475EDC392B0650B100F5A091 /* SaveGame.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 			files = (
 				4717A53F2AF2B13800FB61E0 /* ContentView.swift in Sources */,
 				4717A53D2AF2B13800FB61E0 /* VolleyballTrackerApp.swift in Sources */,
+				475EDC3A2B0650B100F5A091 /* SaveGame.swift in Sources */,
+				475EDC382B05BA5E00F5A091 /* Outcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
